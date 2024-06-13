@@ -4,7 +4,17 @@
    - Use [jwt.io](https://jwt.io/) to decode and explain the contents.
 
 ## Answer:
-Decoded payload using jwt.io:
+Decoded using jwt.io
+
+Header :
+```
+{
+  "alg": "HS256",
+  "typ": "JWT"
+}
+```
+
+Payload Data:
 ```
 {
   "sub": "john.doe@example.com",
@@ -15,8 +25,8 @@ Decoded payload using jwt.io:
 ```
 
 Explanation of the Decoded Token :
-sub: Subject of the token, usually the user email or ID (john.doe@example.com).
-role: The role of the user (ADMIN).
+sub: Subject of the token, usually the user email or ID (Here john.doe@example.com).
+role: The role of the user (Here ADMIN).
 user_id: Unique identifier for the user (cdf83d3f-3749-4cdd-94ea-a55cfc048d0f).
 exp: Expiration time of the token (in Unix timestamp format).
 
