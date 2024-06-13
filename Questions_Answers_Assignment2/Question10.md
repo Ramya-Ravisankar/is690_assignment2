@@ -6,8 +6,8 @@ Hashing is the process of transforming any given key or a string of characters i
 
 Salting - BCrypt internally generates a random salt while encoding passwords and store that salt along with the encrypted password. Hence, it is obvious to get different encoded results for the same string. But one common thing is that everytime it generates a String of length 60
 
-<span style="color: blue;">The user password security is our fastapi application is ensured through this hashing algorithm. In our project from the below code snippet, the hash_password function uses bcrypt hash algorithm.
-When the user enters their password into the login form, the password is given to a hashing algorithm that converts the text into a special string that must match the hashed password value of the user stored in the database in order to authenicate the user into the system.</span>
+<span style="color: blue;"The user password security is our fastapi application is ensured through the hashing algorithm. In our project from the below code snippet, the hash_password function uses bcrypt hash algorithm.
+When the user enters their password into the login form, the password is given to a hashing algorithm that converts the text into a special string that must match the hashed password value of the user stored in the database , to authenicate the user into the system.</span>
 
 ### Code Snippets from the project
 [user_service.py](/app/services/user_service.py)
