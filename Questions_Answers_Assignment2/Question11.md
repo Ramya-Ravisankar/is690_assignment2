@@ -16,7 +16,7 @@ Hashing can ensure integrity and provide authentication as well. The hash functi
 
 An example of Hashing is when storing passwords (hashed passwords).
 
-![Hashing_Example_from_Project](/screenshots/Question11/Q11_Hashing_Example.png)
+[Hashing_Example_from_Project](/screenshots/Question11/Q11_Hashing_Example.png)
 
 Encoding:
 A reversible process that transforms data from one format to another, such as converting written language into a digital format. Encoding doesn't require keys, but it does require an algorithm to decode the transformed data. The main purpose of encoding is to make data readable by most systems or usable by external processes, and it's used to ensure the integrity and usability of data
@@ -26,7 +26,6 @@ A reversible process that transforms data from one format to another, such as co
 
 An example of when to use encoding is when generating a JWT token for a user login.
 
-![Encoding_Example_from_Project](/screenshots/Question11/Q11_Encoding_Example.png)
-
+[Encoding_Example_from_Project](/screenshots/Question11/Q11_Encoding_Example.png)
 
 [Return back to answer.md](/answer.md)
