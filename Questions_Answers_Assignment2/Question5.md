@@ -1,7 +1,7 @@
 
 5. **Why is Pytest critical for the development of the API?**
 
-## JWT and User Authentication
+## Answer
 
 Unit testing is very important when it comes to coding , which ensures that our code works perfect. Hence Pytest is critical for the development of the API as Pytest can be used for Unit Testing and also for complex functional testing of applications. We can write test codes using the assert statements , making the tests more readable and maintainable.
 
