@@ -60,7 +60,6 @@ Code Snippets from the project:
 [user_routes.py](/app/routers/user_routes.py)
 
 ## Login with form  - code snippet - POST method
-
 @router.post(
         "/login_with_form/",
         include_in_schema=False, tags=["Login and Registration"])
@@ -84,7 +83,6 @@ async def login(
         raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail=str(e))
 
 ## Login  - code snippet - POST method
-
 @router.post("/login/",
              response_model=TokenResponse,
              tags=["Login and Registration"]
@@ -110,19 +108,15 @@ async def login(
         return {"access_token": access_token, "token_type": "bearer"}
     except InvalidCredentialsException as e:
         raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail=str(e))
-    except AccountLockedException as e:
+    except AccountLocke dException as e:
         raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail=str(e))
 
 ## Logout  - code snippet - POST method
-
 @router.post("/logout", tags=["Login and Registration"])
 async def logout(response: Response):
     response = RedirectResponse(url="/", status_code=status.HTTP_303_SEE_OTHER)
     response.delete_cookie(key="access_token")
     return response
-
-
-
 
 
 [Return back to answer.md](/answer.md)
