@@ -53,7 +53,7 @@ NOTE - Check if this user is updated in the database and for this,the Role updat
 
 [AUTHENTICATED_USER_SUCCESSFUL_LOGON](/screenshots/Question2/LOGGEDIN_AS_AUTHENTICATED_USER.png)
 
-13) An AUTHENTICATED user can do all the CRUD operations - create another user, update user details etc.
+16) An AUTHENTICATED user can do all the CRUD operations - create another user, update user details etc.
 
 Code Snippets from the project:
 

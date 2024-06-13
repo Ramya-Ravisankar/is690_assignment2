@@ -1,4 +1,3 @@
-
 8. **Describe the user registration logic in your project. Provide a pseudo-code workflow from the registration request to storing the user in the database.**
 
 ## Answer:
@@ -29,12 +28,18 @@ Search for the above ( first user ) record in database
 
 [Email_Trigger_Screenshot](/screenshots/Question2/email.png)
 
-8) In the verification email received, click on the "verify email" link available inside the email. Check in database that for the first user (ADMIN) the User role is NOT changed and remains in ADMIN role, email verified column set to true and verification_token is set to NULL for this user.
+8) To verify the email, access the same link http://localhost:8000/docs,
+under the Login and Registration / Get method , click on try it out and provide the user email, token.
+Click on execute and verify the email of the new user.
+
+NOTE - We can also verify the email, through verification email being sent to  the user.
+ In the email received for the user click on the "verify email" link available inside the email. Check in database that for the first user (ADMIN) the User role is NOT changed and remains in ADMIN role, email verified column set to true and verification_token is set to NULL for this user.
 
 9) Follow the same steps as above and create second user.
 NOTE - Check if this user is updated in the database and for this,the Role updated by default is ANONYMOUS.
 
-10) Check for the email received and click on the verify email link available inside the email triggered for the second user.
+10) Check for the email received and click on the verify email link available inside the email triggered for the second user OR can also verify the email of the user through
+Login and Registration\GET method.
 
 11) Once email is verified,  Check in database that for the second user the User role is changed from ANONYMOUS to AUTHENTICATED, email verified set to true and verification_token is set to NULL now for this second user.
 
@@ -51,7 +56,7 @@ NOTE - Check if this user is updated in the database and for this,the Role updat
 
 [AUTHENTICATED_USER_SUCCESSFUL_LOGON](/screenshots/Question2/LOGGEDIN_AS_AUTHENTICATED_USER.png)
 
-13) An AUTHENTICATED user can do all the CRUD operations - create another user, update user details etc.
+16) An AUTHENTICATED user can do all the CRUD operations - create another user, update user details etc.
 
 ## Code Snippets from the project:
  ### Register User Code Snippet from the project:
