@@ -15,8 +15,11 @@ Role-based access control (RBAC) refers to the idea of assigning permissions to 
 ## 2) The Roles available are :
 
 ADMIN
+
 ANONYMOUS
+
 AUTHENTICATED
+
 MANAGER
 
 [Application_Available_Roles_ScreenshotfromDB](/screenshots/Question16/Q16_user_management_available_user_roles.png)
